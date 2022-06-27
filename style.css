@@ -5,13 +5,31 @@
 
 section { padding: 10vh; }
 
-p { color: #471829; font-family: 'Montserrat', sans-serif; }
+p { color: #471829; font-family: 'Montserrat', sans-serif; padding-bottom: 4vh;}
 
-a { color: #987782; font-family: 'Montserrat', sans-serif; }
+a { color: #987782; font-family: 'Montserrat', sans-serif; text-decoration: none; }
 
 a:hover { font-weight: bolder; }
 
 ul { list-style: none; }
+
+svg { outline-color:  #471829; }
+
+.btn {
+    background-color: #471829;
+    border-radius: 5vh;
+    padding: 1vh 2.5vh;
+}
+
+.btn:hover {
+    animation: modify-btn 3s infinite;
+}
+
+@keyframes modify-btn {
+    0% { border: 1px solid #471829; }
+    50% { border-radius: 0%; }
+    90% { color: #471829; background-color: #f5ecef; }
+}
 
 .bg_primary { background-color: #ead0e1; }
 
@@ -63,7 +81,14 @@ ul { list-style: none; }
 
 /* Estilos para la primera sección */
 
-.section_img { width: 80vh; }
+.section_img {
+    animation: move-img 3s infinite;
+    width: 80vh;
+}
+
+@keyframes move-img {
+    50% { transform: scale(1.2); }
+}
 
 .description { width: 90vh; }
 
@@ -90,10 +115,13 @@ ul { list-style: none; }
     background-color: #f5ecef;
     margin: 4vh;
     padding: 2vh;
+    height: 65vh;
     width: 40vh;
 }
 
 .products_card_img { height: 40vh; }
+
+.products_card_img:hover { transform: rotate(360deg); transition: 2s; }
 
 /* Estilos para sección: Contactanos */
 
