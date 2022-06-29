@@ -5,88 +5,159 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <title> Cafuné, cremas hidratantes </title>
 </head>
 
 <body>
     <!-- Menú hermoso -->
-    <header class="bg_primary">
-        <nav>
-            <ul class="header_list">
-                <div>
-                    <img src="img/logo-cafune.png" alt="hermoso loguito que voy a diseñar" class="header_logo">
-                </div>
-                <li>
-                    <a href="#historia"> Historia </a>
-                </li>
-                <li>
-                    <a href="#productos"> Productos </a>
-                </li>
-                <li>
-                    <a href="#contacto"> Contactanos </a>
-                </li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-sm fixed-top bg_primary">
+            <div class="container-fluid">
+              <a href="index.html">
+                <img src="img/logo-cafune.png" alt="Logo de Cafuné" class="header_logo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#historia">Historia</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#productos" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Productos
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="secciones/piel-seca.html">Piel Seca</a></li>
+                      <li><a class="dropdown-item" href="secciones/piel-grasa.html">Piel grasa</a></li>
+                      <li><a class="dropdown-item" href="secciones/para-cicatrices.html">Para cicatrices</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contactanos">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
         </nav>
     </header>
 
-    <!--Sección principal -->
+    <!--Sección Carrusel -->
     <section class="bg_primary">
-        <!--Imagen 1 del carrusel -->
-        <div class="content_center">
-            <div>
-                <img src="img/piel-seca.png" alt="fotografía ilustrativa de la crema" class="section_img">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators pt-25">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div class="description">
-                <h1 class="title"> Para piel seca </h1>
-                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-                <a href="secciones/piel-seca.html" class="btn">Ver detalles</a>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <img src="img/piel-seca.png" alt="fotografía ilustrativa de la crema" class="section_img">
+                        </div>
+                        <div class="description col align-middle">
+                            <div>
+                            <h1 class="title"> Para piel seca </h1>
+                            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <a href="secciones/piel-seca.html" class="btn_customized">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <img src="img/piel-grasa.png" alt="fotografía ilustrativa de la crema" class="section_img">
+                        </div>
+                        <div class="description col align-middle">
+                            <div>
+                            <h1 class="title"> Para piel grasa </h1>
+                            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <a href="secciones/piel-grasa.html" class="btn_customized">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <img src="img/cicatrices.png" alt="fotografía ilustrativa de la crema" class="section_img">
+                        </div>
+                        <div class="description col align-middle">
+                            <div>
+                            <h1 class="title"> Para cicatrices </h1>
+                            <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                            <a href="secciones/para-cicatrices.html" class="btn_customized">Ver detalles</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
-        </div>
+          </div>
     </section>
 
     <!--Sección: Historia -->
     <section class="bg_secondary" id="historia">
-        <div class="grid-container">
-            <div>
-                <h2 class="title"> Un poco de historia... </h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum explicabo dolore ab temporibus inventore voluptatibus accusantium nesciunt incidunt aspernatur ea corporis, enim unde accusamus illo velit perspiciatis rem. Repellendus, ipsum!</p>
-                <div class="history_desciption grid-container">
-                    <img src="img/icon01.png" alt="icono de naturaleza" class="history_icons">
-                    <p> Texto descriptivo sobre la marca </p>
+        <div class="container">
+            <div class="row description">
+                <div class="col">
+                    <h2 class="title"> Un poco de historia... </h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum explicabo dolore ab temporibus inventore voluptatibus accusantium nesciunt incidunt aspernatur ea corporis, enim unde accusamus illo velit perspiciatis rem. Repellendus, ipsum!</p>
+                    <div class="row">
+                        <div class="col">
+                            <img src="img/icon01.png" alt="icono de naturaleza" class="history_icons">
+                            <p> Texto descriptivo sobre la marca </p>
+                        </div>
+                        <div class="col">
+                            <img src="img/icon02.png" alt="icono de naturaleza" class="history_icons">
+                            <p> Texto descriptivo sobre la marca </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="history_desciption grid-container">
-                    <img src="img/icon02.png" alt="icono de naturaleza" class="history_icons">
-                    <p> Texto descriptivo sobre la marca </p>
+                <div class="col">
+                    <img src="img/historia.png" alt="fotografía de los productos" class="history_img">
                 </div>
-            </div>
-            <div>
-                <img src="img/historia.png" alt="fotografía de los productos" class="history_img">
             </div>
         </div>
     </section>
 
     <!-- Sección: Productos -->
     <section id="productos" class="bg_primary">
-        <div>
-            <h2 class="title"> Nuestros productos </h2>
-            <div class="grid-container_products">
-                <div class="products_card">
-                    <img src="img/piel-seca.png" alt="imagen de crema para las cicatrices" class="products_card_img">
-                    <p> Para piel seca </p>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="secciones/para-cicatrices.html" class="btn"> Ver detalles </a>
+        <div class="container">
+            <h2 class="title mb-5"> Nuestros productos </h2>
+            <div class="row justify-content-center">
+                <div class="col-3 card">
+                    <img src="img/piel-seca.png" class="card-img-top" alt="Imagen ilustrativa de la crema">
+                    <div class="card-body">
+                    <h5 class="subtitle">Para piel seca</h5>
+                    <p>Some quick example text to build on the card title and make up.</p>
+                    <a href="secciones/piel-seca.html" class="btn_customized_basic">Ver detalles</a>
+                    </div>
                 </div>
-                <div class="products_card">
-                    <img src="img/piel-grasa.png" alt="imagen de crema para las cicatrices" class="products_card_img">
-                    <p> Para piel grasa </p>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="secciones/para-cicatrices.html" class="btn"> Ver detalles </a>
+                <div class="col-3 card">
+                    <img src="img/piel-grasa.png" class="card-img-top" alt="Imagen ilustrativa de la crema">
+                    <div class="card-body">
+                    <h5 class="subtitle">Para piel grasa</h5>
+                    <p>Some quick example text to build on the card title and make up.</p>
+                    <a href="secciones/piel-grasa.html" class="btn_customized_basic">Ver detalles</a>
+                    </div>
                 </div>
-                <div class="products_card">
-                    <img src="img/cicatrices.png" alt="imagen de crema para las cicatrices" class="products_card_img">
-                    <p> Para cicatrices </p>
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    <a href="secciones/para-cicatrices.html" class="btn"> Ver detalles </a>
+                <div class="col-3 card">
+                    <img src="img/cicatrices.png" class="card-img-top" alt="Imagen ilustrativa de la crema">
+                    <div class="card-body">
+                    <h5 class="subtitle">Para cicatrices</h5>
+                    <p>Some quick example text to build on the card title and make up.</p>
+                    <a href="secciones/para-cicatrices.html" class="btn_customized_basic">Ver detalles</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -94,37 +165,50 @@
 
     <!-- Sección: Contacto -->
     <section id="contacto" class="bg_secondary">
-        <div>
-            <h2 class="title"> ¡Contactate con nosotrxs! </h2>
-            <!-- Aquí armaría un formulario sencillo, cuando expliquen cómo hacerlo -->
-            <div>
-                <p>Correo electrónico</p>
-                <p>Mensaje</p>
-                <a href="" class="btn"> Enviar mensaje </a>
+        <div class="container">
+            <h2 class="title mb-5"> ¡Contactate con nosotrxs! </h2>
+            <div class="row justify-content-center">
+                <div class="col-8">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">@</span>
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">With textarea</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+                    <div>
+                        <a href="" class="btn_customized_basic" type="submit">Enviar mensaje</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg_primary">
-        <div class="footer_content">
-            <div>
-                <img src="img/logo-cafune.png" alt="logo de la empresa" class="footer_logo" >
+        <div class="container">
+            <div class="row align-middle">
+                <div class="col">
+                    <img src="img/logo-cafune.png" alt="logo de la empresa" class="footer_logo" >
+                </div>
+                <div class="col">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="img/facebook_active.png" alt="facebook" class="footer_rrss">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="img/instagram_active.png" alt="instagram" class="footer_rrss">
+                    </a>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img src="img/linkedin_active.png" alt="linkedin" class="footer_rrss">
+                    </a>
+                </div>
             </div>
-            <div>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="img/facebook_active.png" alt="facebook" class="footer_rrss">
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="img/instagram_active.png" alt="instagram" class="footer_rrss">
-                </a>
-                <a href="https://www.linkedin.com" target="_blank">
-                    <img src="img/linkedin_active.png" alt="linkedin" class="footer_rrss">
-                </a>
-            </div>
-            <div> <p>Creado por Wendy Suarez®</p> </div>
         </div>
     </footer>
 
+    <!-- JS te bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
 </body>
 </html>
