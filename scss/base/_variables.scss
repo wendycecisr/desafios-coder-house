@@ -1,0 +1,15 @@
+/* Colores */
+$bg_primary: #ead0e1;
+$bg_secondary: #f5ecef;
+$bg_tertiary: #50061c;
+
+/* Texto */
+$decoration: underline;
+
+.darken {
+    background-color: darken($bg_primary, 50%);
+}
+
+.lighten {
+    background-color: lighten($bg_tertiary, 50%);
+}

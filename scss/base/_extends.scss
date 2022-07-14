@@ -1,0 +1,16 @@
+/* Probando extends */
+
+%btn-customized {
+    border-radius: 100%;
+    padding: 2vh 1,5vh;
+}
+
+.btn_customized_basic {
+    text-align: center;
+    @extend %btn-customized;
+}
+
+.btn_customized_animation {
+    text-decoration: overline;
+    @extend %btn-customized;
+}

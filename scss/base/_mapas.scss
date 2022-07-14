@@ -1,0 +1,20 @@
+/* Probando mapas */
+$morning: (
+    color-morning: #800040,
+    bg-morning: #ead0e1
+);
+
+.morning {
+    background-color: map-get($morning, bg-morning);
+    text-decoration: overline map-get($morning, color-morning );
+}
+
+$dark: (
+    color-dark: #ead0e1,
+    bg-dark: #800040
+);
+
+.dark {
+    background-color: map-get($dark, bg-dark);
+    border: 1px solid map-get($dark, color-dark);
+}

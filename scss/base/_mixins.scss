@@ -1,0 +1,30 @@
+/* Probando mixins */
+
+@mixin products {
+    border-radius: 100%;
+    padding: 2vh 1,5vh;
+}
+
+.products {
+    text-align: center;
+    @include products;
+}
+
+@mixin prefijos ($propiedad) {
+    -moz-transform: $propiedad;
+    -o-transform: $propiedad;
+    -webkit-transform: $propiedad;
+    transform: $propiedad;
+}
+
+.product-1 {
+    @include prefijos(translate (50%));
+}
+
+.product-2 {
+    @include prefijos(scale (5));
+}
+
+.product-3 {
+    @include prefijos(rotate (80deg));
+}
