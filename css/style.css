@@ -1,5 +1,66 @@
-/* Archivos parciales */ /* Colores */
+/* Archivos parciales */ /* Probando extends */
+.btn_customized_animation, .btn_customized_basic {
+  border-radius: 100%;
+  padding: 2vh 1, 5vh;
+}
+
+.btn_customized_basic {
+  text-align: center;
+}
+
+.btn_customized_animation {
+  text-decoration: overline;
+}
+
+/* Probando mapas */
+.morning {
+  background-color: #ead0e1;
+  text-decoration: overline #800040;
+}
+
+.dark {
+  background-color: #800040;
+  border: 1px solid #ead0e1;
+}
+
+/* Probando mixins */
+.products {
+  text-align: center;
+  border-radius: 100%;
+  padding: 2vh 1, 5vh;
+}
+
+.product-1 {
+  -moz-transform: translate 50%;
+  -o-transform: translate 50%;
+  -webkit-transform: translate 50%;
+  transform: translate 50%;
+}
+
+.product-2 {
+  -moz-transform: scale 5;
+  -o-transform: scale 5;
+  -webkit-transform: scale 5;
+  transform: scale 5;
+}
+
+.product-3 {
+  -moz-transform: rotate 80deg;
+  -o-transform: rotate 80deg;
+  -webkit-transform: rotate 80deg;
+  transform: rotate 80deg;
+}
+
+/* Colores */
 /* Texto */
+.darken {
+  background-color: #813a69;
+}
+
+.lighten {
+  background-color: #f3628d;
+}
+
 /* Probando anidamiento 1,2,3.. */
 header nav {
   background-color: #ead0e1;
